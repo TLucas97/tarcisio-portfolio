@@ -1,10 +1,34 @@
+<script>
+  const redirectToAnotherPage = (/** @type {string} */ page) => {
+    if (page === "email") {
+      window.location.href = "mailto:tarcisio.almeida197@gmail.com";
+      return;
+    }
+    const locations = {
+      linkedin: "https://www.linkedin.com/in/tarcisio-a-0a5577207/",
+      github: "https://github.com/TLucas97",
+      whatsapp:
+        "https://api.whatsapp.com/send?phone=5591981713707&text=%2AHello%20%2F%20Ol%C3%A1%21%2A",
+    };
+    window.open(locations[page], "_blank");
+  };
+</script>
+
 <main class="fade-in">
   <div class="contact-items">
     <span>You contact me on:</span>
-    <button class="linkedin">Linkedin</button>
-    <button class="github">Github</button>
-    <button class="email">Email</button>
-    <button class="whatsapp">Whatsapp</button>
+    <button class="linkedin" on:click={() => redirectToAnotherPage("linkedin")}
+      >Linkedin</button
+    >
+    <button class="github" on:click={() => redirectToAnotherPage("github")}
+      >Github</button
+    >
+    <button class="email" on:click={() => redirectToAnotherPage("email")}
+      >Email</button
+    >
+    <button class="whatsapp" on:click={() => redirectToAnotherPage("whatsapp")}
+      >Whatsapp</button
+    >
   </div>
 </main>
 
