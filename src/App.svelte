@@ -5,7 +5,7 @@
   import Contact from "./pages/Contact.svelte";
   import Projects from "./pages/Projects.svelte";
   import Skills from "./pages/Skills.svelte";
-  import Experience from "./pages/experience.svelte";
+  import Experience from "./pages/Experience.svelte";
 </script>
 
 <Router>
