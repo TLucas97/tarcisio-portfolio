@@ -1,7 +1,7 @@
 <main>
   <div class="home fade-in">
     <img
-      src="https://avatars.githubusercontent.com/u/91506143?s=400&u=468d2d038fa45292efbebd7a5c2468a30a106658&v=4"
+      src="./src/assets/tarcisio.png"
       alt="profile"
     />
     <span class="title">Tarcisio Almeida</span>
