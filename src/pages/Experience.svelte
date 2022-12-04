@@ -7,7 +7,8 @@
   const experiences = [
     {
       title: "Frontend Developer",
-      company_image: "https://avatars.githubusercontent.com/u/65120980?s=200&v=4",
+      company_image:
+        "https://avatars.githubusercontent.com/u/65120980?s=200&v=4",
       company: "Klever.io",
       description:
         "I'm currently working at Klever.io as a Frontend Developer. I'm responsible for developing the frontend of the platform, using React, Redux, React-query and Ant Design. I also work with web3 wallet integrations such as Metamask and WalletConnect.",
@@ -149,7 +150,7 @@
             }
 
             .company-name {
-                margin: 0.2em 0;
+              margin: 0.2em 0;
             }
 
             .company-date {
