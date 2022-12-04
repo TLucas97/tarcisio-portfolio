@@ -11,8 +11,8 @@
 <Router>
   <Header />
   <Route path="/" component={Home} />
-  <Route path="contact" component={Contact} />
-  <Route path="projects" component={Projects} />
-  <Route path="skills" component={Skills} />
-  <Route path="experience" component={Experience} />
+  <Route path="/contact" component={Contact} />
+  <Route path="/projects" component={Projects} />
+  <Route path="/skills" component={Skills} />
+  <Route path="/experience" component={Experience} />
 </Router>
