@@ -60,7 +60,6 @@
       flex-direction: column;
       width: 300px;
       height: 500px;
-      margin-top: 19em;
 
       .project {
         display: flex;
