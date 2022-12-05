@@ -8,6 +8,7 @@
 
 <main class="fade-in">
   <span class="title"> My current experiences </span>
+  <hr />
   <div class="company-tabs">
     <TabBar
       tabs={[experiences[0].company, experiences[1].company]}
@@ -78,6 +79,11 @@
     .title {
       font-size: 1.2rem;
       font-weight: bold;
+    }
+
+    hr {
+      width: 10%;
+      border: 1px solid #000000;
     }
 
     .company-tabs {
