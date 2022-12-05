@@ -46,7 +46,6 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 160vh;
 
     .title {
       font-size: 1.2rem;
@@ -59,7 +58,6 @@
       align-items: center;
       flex-direction: column;
       width: 300px;
-      height: 500px;
 
       .project {
         display: flex;
