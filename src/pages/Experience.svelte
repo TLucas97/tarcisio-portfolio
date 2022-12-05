@@ -1,49 +1,9 @@
 <script>
   import Tab, { Label } from "@smui/tab";
   import TabBar from "@smui/tab-bar";
+  import { experiences } from "../data";
 
   let active = "Klever.io";
-
-  const experiences = [
-    {
-      title: "Frontend Developer",
-      company_image:
-        "https://avatars.githubusercontent.com/u/65120980?s=200&v=4",
-      company: "Klever.io",
-      description:
-        "I'm currently working at Klever.io as a Frontend Developer. I'm responsible for developing the frontend of the platform, using React, Redux, React-query and Ant Design. I also work with web3 wallet integrations such as Metamask and WalletConnect.",
-      date: "08/2022 - Present",
-      tecnologies: [
-        "React",
-        "Redux",
-        "React-query",
-        "Ant Design",
-        "Web3",
-        "Metamask",
-        "WalletConnect",
-        "Cypress",
-        "Jest",
-        "GraphQL",
-        "Apollo",
-      ],
-    },
-    {
-      title: "Frontend Developer",
-      company_image: "https://www.suthub.com/favicon.ico",
-      company: "SUTHUB",
-      description:
-        "I worked at SUTHUB as a Frontend Developer. I was responsible for developing the frontend of the platform, using Vue.js, Vuetify and Nuxt. I also worked with many checkout steps annd payment integrations with the backend team.",
-      date: "01/2022 - 08/2022",
-      tecnologies: [
-        "Vue.js",
-        "Vuetify",
-        "Nuxt",
-        "Vuex",
-        "Ant Design",
-        "Templates-PDF",
-      ],
-    },
-  ];
 </script>
 
 <main class="fade-in">
@@ -113,6 +73,7 @@
     align-items: center;
     flex-direction: column;
     height: 90vh;
+    width: 100%;
 
     .title {
       font-size: 1.2rem;
