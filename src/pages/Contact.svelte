@@ -37,7 +37,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 95%;
 
     .contact-items {
       display: flex;
@@ -55,6 +55,7 @@
         border-radius: 8px;
         margin: 1em 0;
         font-weight: bold;
+        cursor: pointer;
       }
 
       .linkedin {

@@ -2,6 +2,8 @@
 
 * {
   font-family: Roboto;
+  margin: 0;
+  padding: 0;
 }
 
 @keyframes fadeIn {
@@ -74,11 +76,5 @@
   }
   50% {
     border-color: #ffffff;
-  }
-}
-
-@media (min-width: 600px) {
-  body {
-    display: none;
   }
 }

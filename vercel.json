@@ -1,0 +1,24 @@
+{
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/Home.svelte"
+    },
+    {
+      "src": "/projects",
+      "dest": "/Projects.svelte"
+    },
+    {
+      "src": "/skills",
+      "dest": "/Skills.svelte"
+    },
+    {
+      "src": "/contact",
+      "dest": "/Contact.svelte"
+    },
+    {
+      "src": "/experience",
+      "dest": "/Experience.svelte"
+    }
+  ]
+}
