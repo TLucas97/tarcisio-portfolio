@@ -63,7 +63,7 @@
     flex: 1 0 auto;
     background-color: white;
     overflow-y: scroll;
-    height: 600px;
+    height: 500px;
   }
   .phone_button {
     width: 1.5rem;
