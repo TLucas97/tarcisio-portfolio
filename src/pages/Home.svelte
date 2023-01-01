@@ -9,16 +9,6 @@
     <div class="description">
       <small>25 years old</small>
       <small>Brazilian</small>
-      <small
-        >Currently working at
-        <a
-          href="https://klever.io/en"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Klever.io
-        </a>
-      </small>
     </div>
   </div>
 </main>
