@@ -1,3 +1,4 @@
+import "./app.postcss";
 import "./app.scss";
 import App from "./App.svelte";
 

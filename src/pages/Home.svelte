@@ -61,10 +61,6 @@
           font-size: 0.6rem;
           font-weight: bold;
         }
-
-        a {
-          color: black;
-        }
       }
     }
   }

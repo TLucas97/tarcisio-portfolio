@@ -4,6 +4,16 @@
   font-family: Roboto;
   margin: 0;
   padding: 0;
+  // custom scroll appearence
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+  }
 }
 
 @keyframes fadeIn {
