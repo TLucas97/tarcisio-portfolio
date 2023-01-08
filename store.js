@@ -39,12 +39,13 @@ export const pageTexts = writable({
       },
       paragraph2: {
         title: "My current career path",
+        subtitles: ["SUTHUB", "Klever.io", "DACXI Chain"],
         text1:
-          "I began my career in front-end development at Suthub, where I worked on the development of websites for various insurance companies. I utilized technologies such as Vue.js, Vuetify, Nuxt, Vuex, and templates-pdf to create responsive layouts and checkout processes for users to hire the company's services.",
+          "I started my career at SUTHUB, where I worked on the development of various insurance platforms and landing pages. I also provided support for their primary platform by fixing bugs and refactoring legacy code. I assisted my colleagues by conducting code reviews. At SUTHUB, I utilized technologies such as Vue.js, Vuetify, Vuex, Nuxt, Vue Bootstrap, Ant Design, and templates-pdf for dynamic PDF creation.",
         text2:
-          "I then joined the team at Klever.io, where I used technologies such as React.js, Redux, Antd, Cypress, Jest, HTML, CSS, and JavaScript to work on the development of a coin-swapping platform. In addition to contributing to the platform's development, I also wrote tests for the application, both unit and e2e, and had the opportunity to work with web3 implementations by integrating extension wallets such as MetaMask, TronLink, and WalletConnect into the web platform.",
+          "After that, I joined the team at Klever.io where I worked on developing their new Swap web platform, which allows users to exchange their coins. I had the opportunity to utilize Test-Driven Development (TDD) and write both unit and end-to-end tests using Cypress and Jest. I also integrated web extension wallets, such as MetaMask, WalletConnect, and TronLink, with the Swap platform using web3. At Klever.io, I utilized technologies such as React.js, Ant Design, Styled Components, Redux, React Query, web3, Jest, Cypress, and TypeScript.",
         text3:
-          "Currently, I am working at DACXI Chain, where I am using technologies such as Vue.js, Tailwind CSS, HTML, CSS, and JavaScript to develop a platform for managing and trading cryptocurrencies. I am also utilizing Playwright for e2e testing and Docker and Capacitor for mobile app development. It has been an exciting and rewarding journey so far, and I am looking forward to continuing to grow and learn in my career.",
+          "Currently, I am working at DACXI Chain on their cryptocurrency exchange platform, which allows users to buy, sell, and manage their digital assets. I am using Playwright for end-to-end tests and integrating Capacitor into the mobile platform. I am also using Docker to run the backend environment. At DACXI, I am utilizing technologies such as Vue.js, Tailwind CSS, TypeScript, Playwright, Capacitor, and Docker. It has been an exciting and rewarding journey so far, and I am looking forward to continuing to grow and learn in my career.",
       },
     },
     ptbr: {
@@ -55,12 +56,13 @@ export const pageTexts = writable({
       },
       paragraph2: {
         title: "Meu caminho de carreira atual",
+        subtitles: ["SUTHUB", "Klever.io", "DACXI Chain"],
         text1:
-          "Comecei minha carreira em desenvolvimento front-end na Suthub, onde trabalhei no desenvolvimento de sites para várias empresas de seguros. Utilizei tecnologias como Vue.js, Vuetify, Nuxt, Vuex e templates-pdf para criar layouts responsivos e processos de checkout para usuários contratarem os serviços da empresa.",
+          "Comecei minha carreira na SUTHUB, onde trabalhei no desenvolvimento de várias plataformas e páginas de destino de seguros. Também forneci suporte à sua plataforma principal, corrigindo bugs e refatorando código legado. Ajudei meus colegas a realizar revisões de código. Na SUTHUB, utilizei tecnologias como Vue.js, Vuetify, Vuex, Nuxt, Vue Bootstrap, Ant Design e templates-pdf para criação dinâmica de PDF.",
         text2:
-          "Em seguida, me juntei à equipe da Klever.io, onde utilizei tecnologias como React.js, Redux, Antd, Cypress, Jest, HTML, CSS e JavaScript para trabalhar no desenvolvimento de uma plataforma de troca de moedas. Além de contribuir para o desenvolvimento da plataforma, também escrevi testes para o aplicativo, tanto unitários quanto e2e, e tive a oportunidade de trabalhar com implementações web3 ao integrar carteiras de extensão como MetaMask, TronLink e WalletConnect na plataforma web.",
+          "Depois disso, me juntei à equipe da Klever.io, onde trabalhei no desenvolvimento de sua nova plataforma web de Swap, que permite que os usuários troquem suas moedas. Tive a oportunidade de utilizar o desenvolvimento guiado por testes (TDD) e escrever testes de unidade e de ponta a ponta usando Cypress e Jest. Também integrei carteiras de extensão da web, como MetaMask, WalletConnect e TronLink, com a plataforma de troca usando web3. Na Klever.io, utilizei tecnologias como React.js, Ant Design, Styled Components, Redux, React Query, web3, Jest, Cypress e TypeScript.",
         text3:
-          "Atualmente, estou trabalhando na DACXI Chain, onde estou usando tecnologias como Vue.js, Tailwind CSS, HTML, CSS e JavaScript para desenvolver uma plataforma para gerenciar e negociar criptomoedas. Também estou utilizando Playwright para testes e2e e Docker e Capacitor para desenvolvimento de aplicativos móveis. Foi uma jornada emocionante e gratificante até agora, e estou ansioso para continuar a crescer e aprender na minha carreira.",
+          "Atualmente, estou trabalhando na DACXI Chain em sua plataforma de troca de criptomoedas, que permite que os usuários comprem, vendam e gerenciem suas criptomoedas. Estou usando o Playwright para testes de ponta a ponta e integrando o Capacitor na plataforma móvel. Também estou usando Docker para executar o ambiente de back-end. Na DACXI, estou utilizando tecnologias como Vue.js, Tailwind CSS, TypeScript, Playwright, Capacitor e Docker. Foi uma jornada emocionante e gratificante até agora, e estou ansioso para continuar a crescer e aprender na minha carreira.",
       },
     },
   },

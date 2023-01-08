@@ -7,7 +7,9 @@
 <main class="flex justify-between items-center h-full flex-col mt-2">
   <div class="flex justify-center items-center flex-col">
     <img
-      src="./images/tarcisio.png"
+      src={`./images/${
+        $pageColors.isDarkMode ? "tarcisio-darkmode" : "tarcisio"
+      }.png`}
       alt="profile-pic"
       class="rounded-lg w-44 h-44"
     />
