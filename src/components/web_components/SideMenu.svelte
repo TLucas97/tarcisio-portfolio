@@ -15,7 +15,7 @@
     />
     <span class="mt-4 text-xl font-mono">Tarcísio Almeida</span>
     <span class="mt-1 text-sm font-mono">{currentPageTexts.age}</span>
-    <span class="mt-1 text-xl font-mono">{currentPageTexts.jobTitle}</span>
+    <span class="mt-1 text-2sm font-mono">{currentPageTexts.jobTitle}</span>
     <div class="mt-4 flex flex-col">
       <button
         class="rounded-lg font-mono text-lg text-center my-3 w-64 h-12 flex justify-center items-center font-semibold"
