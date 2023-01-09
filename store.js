@@ -331,7 +331,7 @@ export const pageTexts = writable({
             },
             {
               project: "Stellantis",
-              description: "Uma plataforma para gerenciar e vender seguros",
+              description: "Uma plataforma para gerenciar e vender seguros de veículos",
             },
           ],
           klever: {
