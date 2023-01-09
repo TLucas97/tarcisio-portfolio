@@ -4,7 +4,7 @@
   $: currentPageTexts = $pageTexts.sideMenuTexts[$pageTexts.currentLang];
 </script>
 
-<main class="flex justify-between items-center h-full flex-col mt-2">
+<main class="flex justify-between items-center h-[87vh] flex-col mt-2">
   <div class="flex justify-center items-center flex-col">
     <img
       src={`./images/${
@@ -49,7 +49,7 @@
       </button>
     </div>
   </div>
-  <div class="mb-2">
+  <div class="mb-9">
     <div class="flex justify-center items-center space-x-3 mb-3">
       <button
         title={currentPageTexts.langToggle}

@@ -1,6 +1,10 @@
 <script>
   import DarkModeSwitcher from "../DarkModeSwitcher.svelte";
   import { pageColors } from "../../../store";
+
+  const redirectTo = (url) => {
+    window.open(url, "_blank");
+  };
 </script>
 
 <main
@@ -12,13 +16,21 @@
   class:shadow-lg={!$pageColors.isDarkMode}
 >
   <div class="flex space-x-3 items-center">
-    <button>
+    <button
+      on:click={() =>
+        redirectTo(
+          "https://api.whatsapp.com/send?phone=5591981713707&text=%2AHello%20%2F%20Ol%C3%A1%21%2A"
+        )}
+    >
       <img src="./images/whatsapp.svg" alt="" />
     </button>
-    <button>
+    <button on:click={() => redirectTo("https://github.com/TLucas97")}>
       <img src="./images/github.svg" alt="" />
     </button>
-    <button>
+    <button
+      on:click={() =>
+        redirectTo("https://www.linkedin.com/in/tarcisio-a-0a5577207/")}
+    >
       <img src="./images/linkedin.svg" alt="" />
     </button>
   </div>

@@ -11,6 +11,10 @@
   $: currentTimeState = hour >= 12 ? "PM" : "AM";
 
   $: currentPageTexts = $pageTexts.fixedWppTexts[$pageTexts.currentLang];
+
+  const redirectTo = (url) => {
+    window.open(url, "_blank");
+  };
 </script>
 
 <main class="absolute bottom-0 right-0 m-8">
@@ -44,7 +48,8 @@
               Tarcísio Almeida
             </p>
             <p class="text-gray-600 text-sm mb-2">
-              {currentPageTexts.time} {currentTime}
+              {currentPageTexts.time}
+              {currentTime}
               {currentTimeState}
             </p>
             <p class="text-gray-700 text-base">
@@ -56,7 +61,15 @@
       <div
         class="bg-success-20 w-full h-[50px] flex justify-center items-center hover:bg-success-10 cursor-pointer rounded-b-2xl"
       >
-        <span class="font-bold text-white"> {currentPageTexts.btn} </span>
+        <button
+          class="font-bold text-white"
+          on:click={() =>
+            redirectTo(
+              "https://api.whatsapp.com/send?phone=5591981713707&text=%2AHello%20%2F%20Ol%C3%A1%21%2A"
+            )}
+        >
+          {currentPageTexts.btn}
+        </button>
       </div>
     </div>
   {/if}
