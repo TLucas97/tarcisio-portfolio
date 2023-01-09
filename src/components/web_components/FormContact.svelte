@@ -6,14 +6,14 @@
 
   let email = "";
   let message = "";
-  let currentGif = "callme.gif"
+  let currentGif = "callme.gif";
 
   const sendMail = () => {
     if (!email || !message) {
-      currentGif = "watchout.gif"
+      currentGif = "watchout.gif";
       setTimeout(() => {
-        currentGif = "callme.gif"
-      }, 2000)
+        currentGif = "callme.gif";
+      }, 4000);
       return;
     }
     window.open(
@@ -21,7 +21,7 @@
         `?subject=${email}` +
         `&body=${message}`
     );
-  }
+  };
 </script>
 
 <main in:fade class="px-2 py-3">
@@ -35,6 +35,11 @@
       class="w-[600px] h-[400px] object-cover rounded-xl"
     />
   </div>
+  {#if currentGif === "watchout.gif"}
+    <div class="text-red-500 text-xl mt-2">
+      {currentPageTexts.warning}
+    </div>
+  {/if}
   <div class="mt-5 w-[600px]">
     <div class="relative">
       <input
@@ -60,8 +65,7 @@
     </div>
     <button
       class="transition bg-success-10 hover:bg-success-20 text-white font-bold py-2 px-4 border-b-4 border-success-20 hover:border-success-10 rounded mt-5 text-xl"
-      on:click={sendMail}
-      >{currentPageTexts.sendBtn}</button
+      on:click={sendMail}>{currentPageTexts.sendBtn}</button
     >
   </div>
 </main>
