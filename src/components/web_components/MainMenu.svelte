@@ -4,11 +4,13 @@
   import AboutMe from "./AboutMe.svelte";
   import Projects from "./Projects.svelte";
   import FormContact from "./FormContact.svelte";
+  import FixedWpp from "../FixedWpp.svelte";
 
   $: currentView = $pageState.currentMenuOption;
 </script>
 
 <main class="flex space-x-6 px-5 mt-5 w-full">
+  <FixedWpp />
   <div
     class="rounded w-96 side-menu px-4 py-3 font-mono"
     class:bg-dark-20={$pageColors.isDarkMode}

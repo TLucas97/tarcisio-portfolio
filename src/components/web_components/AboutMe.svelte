@@ -70,14 +70,14 @@
         $pageState.currentMenuOption = "projects";
       }}
     >
-      Veja meus projetos
+      {currentAboutTexts.catchButtons[0]}
     </button><button
       class="transition bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded"
       on:click={() => {
         $pageState.currentMenuOption = "contact";
       }}
     >
-      Entrar em contato
+      {currentAboutTexts.catchButtons[1]}
     </button>
   </div>
 </main>
