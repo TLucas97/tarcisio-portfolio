@@ -18,7 +18,7 @@
     <span class="mt-1 text-xl font-mono">{currentPageTexts.jobTitle}</span>
     <div class="mt-4 flex flex-col">
       <button
-        class="rounded-lg font-mono text-lg text-center my-3 w-64 h-12"
+        class="rounded-lg font-mono text-lg text-center my-3 w-64 h-12 flex justify-center items-center font-semibold"
         class:bg-dark-10={$pageColors.isDarkMode}
         class:bg-light-10={!$pageColors.isDarkMode}
         class:text-dark-10={!$pageColors.isDarkMode}
@@ -26,9 +26,12 @@
         on:click={() => ($pageState.currentMenuOption = "about")}
       >
         {currentPageTexts.about}
+        {#if $pageState.currentMenuOption === "about"}<span
+            class="text-xl ml-2 mb-[2px]">➤</span
+          >{/if}
       </button>
       <button
-        class="rounded-lg font-mono text-lg text-center my-3 w-64 h-12"
+        class="rounded-lg font-mono text-lg text-center my-3 w-64 h-12 flex justify-center items-center font-semibold"
         class:bg-dark-10={$pageColors.isDarkMode}
         class:bg-light-10={!$pageColors.isDarkMode}
         class:text-dark-10={!$pageColors.isDarkMode}
@@ -36,9 +39,12 @@
         on:click={() => ($pageState.currentMenuOption = "projects")}
       >
         {currentPageTexts.projects}
+        {#if $pageState.currentMenuOption === "projects"}<span
+            class="text-xl ml-2 mb-[2px]">➤</span
+          >{/if}
       </button>
       <button
-        class="rounded-lg font-mono text-lg text-center my-3 w-64 h-12"
+        class="rounded-lg font-mono text-lg text-center my-3 w-64 h-12 flex justify-center items-center font-semibold"
         class:bg-dark-10={$pageColors.isDarkMode}
         class:bg-light-10={!$pageColors.isDarkMode}
         class:text-dark-10={!$pageColors.isDarkMode}
@@ -46,6 +52,9 @@
         on:click={() => ($pageState.currentMenuOption = "contact")}
       >
         {currentPageTexts.contact}
+        {#if $pageState.currentMenuOption === "contact"}<span
+            class="text-xl ml-2 mb-[2px]">➤</span
+          >{/if}
       </button>
     </div>
   </div>
