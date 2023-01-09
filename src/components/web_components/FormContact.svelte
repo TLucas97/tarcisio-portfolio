@@ -3,6 +3,25 @@
   import { pageTexts } from "../../../store";
 
   $: currentPageTexts = $pageTexts.contactTexts[$pageTexts.currentLang];
+
+  let email = "";
+  let message = "";
+  let currentGif = "callme.gif"
+
+  const sendMail = () => {
+    if (!email || !message) {
+      currentGif = "watchout.gif"
+      setTimeout(() => {
+        currentGif = "callme.gif"
+      }, 2000)
+      return;
+    }
+    window.open(
+      `mailto:tarcisio.almeida197@gmail.com` +
+        `?subject=${email}` +
+        `&body=${message}`
+    );
+  }
 </script>
 
 <main in:fade class="px-2 py-3">
@@ -11,7 +30,7 @@
   </span>
   <div class="my-3">
     <img
-      src="./images/callme.gif"
+      src={`./images/${currentGif}`}
       alt="reach-me"
       class="w-[600px] h-[400px] object-cover rounded-xl"
     />
@@ -23,6 +42,7 @@
         id="floating_outlined"
         class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-white rounded-lg border-0 appearance-none peer focus:outline-none"
         placeholder=" "
+        bind:value={email}
       />
       <label
         for="floating_outlined"
@@ -35,10 +55,12 @@
         id="floating_outlined"
         class="mt-3 block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-white rounded-lg border-0 border-black appearance-none peer focus:outline-none"
         placeholder={currentPageTexts.message}
+        bind:value={message}
       />
     </div>
     <button
       class="transition bg-success-10 hover:bg-success-20 text-white font-bold py-2 px-4 border-b-4 border-success-20 hover:border-success-10 rounded mt-5 text-xl"
+      on:click={sendMail}
       >{currentPageTexts.sendBtn}</button
     >
   </div>
