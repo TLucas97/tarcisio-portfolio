@@ -22,6 +22,10 @@
         `&body=${message}`
     );
   };
+
+  const redirectTo = (url) => {
+    window.open(url, "_blank");
+  };
 </script>
 
 <main in:fade class="px-2 py-3">
@@ -40,6 +44,16 @@
       {currentPageTexts.warning}
     </div>
   {/if}
+  <div class="my-5">
+    <button
+      class="font-bold text-success-10 hover:text-success-20 underline"
+      on:click={() =>
+        redirectTo(
+          "https://api.whatsapp.com/send?phone=5591981713707&text=%2AHello%20%2F%20Ol%C3%A1%21%2A"
+        )}>+55 (91) 98171-3707</button
+    >
+    <span class="ml-2">{currentPageTexts.or}</span>
+  </div>
   <div class="mt-5 w-[600px]">
     <div class="relative">
       <input

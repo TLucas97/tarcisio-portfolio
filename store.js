@@ -88,6 +88,7 @@ export const pageTexts = writable({
       bestEmail: "Insert your best email",
       message: "e. g. I'm interested in your work, can we talk?",
       warning: "Please, fill all the fields to send your message.",
+      or: "or...",
       sendBtn: "Send",
     },
     ptbr: {
@@ -95,6 +96,7 @@ export const pageTexts = writable({
       bestEmail: "Insira seu melhor e-mail",
       message: "ex. Estou interessado em seu trabalho, podemos conversar?",
       warning: "Por favor, preencha todos os campos para enviar sua mensagem.",
+      or: "ou...",
       sendBtn: "Enviar",
     }
   },
