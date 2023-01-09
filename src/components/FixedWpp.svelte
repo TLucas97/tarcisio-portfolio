@@ -51,7 +51,7 @@
               {currentPageTexts.message}
             </p>
           </div>
-        </div>{currentPageTexts.message}
+        </div>
       </div>
       <div
         class="bg-success-20 w-full h-[50px] flex justify-center items-center hover:bg-success-10 cursor-pointer rounded-b-2xl"
