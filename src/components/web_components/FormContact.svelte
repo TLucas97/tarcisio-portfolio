@@ -1,14 +1,18 @@
 <script>
   import { fade } from "svelte/transition";
   import { pageTexts } from "../../../store";
+  import axios from "axios";
 
   $: currentPageTexts = $pageTexts.contactTexts[$pageTexts.currentLang];
 
   let email = "";
   let message = "";
   let currentGif = "callme.gif";
+  let isError = false;
 
-  const sendMail = () => {
+  const sendMail = async () => {
+    const onlyEmail = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b/;
+    const specialCharacters = /[<>{}()'"\\;\/\[\]`]/;
     if (!email || !message) {
       currentGif = "watchout.gif";
       setTimeout(() => {
@@ -16,11 +20,28 @@
       }, 4000);
       return;
     }
-    window.open(
-      `mailto:tarcisio.almeida197@gmail.com` +
-        `?subject=${email}` +
-        `&body=${message}`
-    );
+    if (!onlyEmail.test(email) || specialCharacters.test(message)) {
+      currentGif = "watchout.gif";
+      isError = true;
+      setTimeout(() => {
+        currentGif = "callme.gif";
+        isError = false;
+      }, 4000);
+      return;
+    }
+    try {
+      currentGif = "please-wait.gif";
+      const response = await axios.post("https://my-auto-email.vercel.app/send-email", {
+        title: email,
+        message,
+      });
+      console.log(response);
+      currentGif = "success.gif";
+      email = "";
+      message = "";
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   const redirectTo = (url) => {
@@ -41,7 +62,12 @@
   </div>
   {#if currentGif === "watchout.gif"}
     <div class="text-red-500 text-xl mt-2">
-      {currentPageTexts.warning}
+      {!isError ? currentPageTexts.warning : currentPageTexts.error}
+    </div>
+  {/if}
+  {#if currentGif === "success.gif"}
+    <div class="text-green-500 text-xl mt-2">
+      {currentPageTexts.success}
     </div>
   {/if}
   <div class="my-5">
@@ -54,7 +80,10 @@
     >
     <span class="ml-2">{currentPageTexts.or}</span>
   </div>
-  <div class="mt-5 w-[600px]">
+  <div
+    class="mt-5 w-[600px]"
+    class:box-disabled={currentGif === "please-wait.gif"}
+  >
     <div class="relative">
       <input
         type="text"
@@ -83,3 +112,11 @@
     >
   </div>
 </main>
+
+<style lang="scss">
+  .box-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+  }
+</style>

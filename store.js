@@ -88,6 +88,8 @@ export const pageTexts = writable({
       bestEmail: "Insert your best email",
       message: "e. g. I'm interested in your work, can we talk?",
       warning: "Please, fill all the fields to send your message.",
+      error: "Looks like something went wrong. Please make sure you are not using any special characters and a valid email address.",
+      success: "Your message was sent successfully! I'll get back to you as soon as possible.",
       or: "or...",
       sendBtn: "Send",
     },
@@ -96,6 +98,8 @@ export const pageTexts = writable({
       bestEmail: "Insira seu melhor e-mail",
       message: "ex. Estou interessado em seu trabalho, podemos conversar?",
       warning: "Por favor, preencha todos os campos para enviar sua mensagem.",
+      error: "Parece que algo deu errado. Certifique-se de que você não está usando nenhum caractere especial e um endereço de e-mail válido.",
+      success: "Sua mensagem foi enviada com sucesso! Eu entrarei em contato o mais breve possível.",
       or: "ou...",
       sendBtn: "Enviar",
     }
