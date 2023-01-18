@@ -8,6 +8,7 @@
   let email = "";
   let message = "";
   let currentGif = "callme.gif";
+  let specialWords = false;
   let isError = false;
 
   const sendMail = async () => {
@@ -22,10 +23,10 @@
     }
     if (!onlyEmail.test(email) || specialCharacters.test(message)) {
       currentGif = "watchout.gif";
-      isError = true;
+      specialWords = true;
       setTimeout(() => {
         currentGif = "callme.gif";
-        isError = false;
+        specialWords = false;
       }, 4000);
       return;
     }
@@ -41,6 +42,12 @@
       message = "";
     } catch (error) {
       console.log(error);
+      currentGif = "watchout.gif";
+      isError = true;
+      setTimeout(() => {
+        currentGif = "callme.gif";
+        isError = false;
+      }, 4000);
     }
   };
 
@@ -62,7 +69,8 @@
   </div>
   {#if currentGif === "watchout.gif"}
     <div class="text-red-500 text-xl mt-2">
-      {!isError ? currentPageTexts.warning : currentPageTexts.error}
+      {!specialWords ? currentPageTexts.warning : currentPageTexts.special_words}
+      {isError ? currentPageTexts.error : ""}
     </div>
   {/if}
   {#if currentGif === "success.gif"}
