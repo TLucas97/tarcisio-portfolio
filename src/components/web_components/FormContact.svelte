@@ -31,7 +31,7 @@
     }
     try {
       currentGif = "please-wait.gif";
-      const response = await axios.post("https://my-auto-email.vercel.app/send-email", {
+      const response = await axios.post("https://dainty-tanuki-9d4b21.netlify.app/.netlify/functions/api/", {
         title: email,
         message,
       });
