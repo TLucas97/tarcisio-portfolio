@@ -10,7 +10,7 @@
 </script>
 
 <main>
-  <div class="min-[600px]:hidden">
+  <!-- <div class="min-[600px]:hidden">
     <Router>
       <Header />
       <Route path="/" component={Home} />
@@ -19,8 +19,8 @@
       <Route path="/skills" component={Skills} />
       <Route path="/experience" component={Experience} />
     </Router>
-  </div>
-  <div class="max-[600px]:hidden">
+  </div> -->
+  <div>
     <WebView />
   </div>
 </main>

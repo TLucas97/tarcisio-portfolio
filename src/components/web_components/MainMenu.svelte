@@ -9,10 +9,10 @@
   $: currentView = $pageState.currentMenuOption;
 </script>
 
-<main class="flex space-x-6 px-5 mt-5 w-full">
+<main class="flex lg:space-x-6 space-y-6 px-5 mt-1 lg:mt-5 w-full lg:flex-row flex-col">
   <FixedWpp />
   <div
-    class="rounded w-96 side-menu px-4 py-3 font-mono"
+    class="rounded lg:w-96 w-full side-menu px-4 py-3 font-mono asm:block hidden"
     class:bg-dark-20={$pageColors.isDarkMode}
     class:text-light-10={$pageColors.isDarkMode}
     class:bg-light-20={!$pageColors.isDarkMode}
@@ -40,11 +40,19 @@
 <style lang="scss">
   .side-menu {
     height: 87vh;
+
+    @media (max-width: 1024px) {
+      height: 120px;
+    }
   }
 
   .content-card {
     height: 87vh;
     overflow: scroll;
     overflow-x: hidden;
+
+    @media (max-width: 1024px) {
+      height: 750px;
+    }
   }
 </style>

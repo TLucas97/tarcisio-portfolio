@@ -1,8 +1,14 @@
 const config = {
-  content: ["./src/**/*.{html,js,svelte,ts}"],
-
+  content: [
+    "./src/**/*.{html,js,svelte,ts}",
+    "./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}",
+  ],
   theme: {
     extend: {
+      screens: {
+        "asm": "878px",
+        "xs": "480px",
+      },
       colors: {
         dark: {
           10: "#333",
@@ -32,12 +38,15 @@ const config = {
         red: {
           10: "#f44336",
           20: "#d32f2f",
-        }
+        },
+      },
+      fontSize: {
+        "2xs": "0.7rem",
       },
     },
   },
 
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };
 
 module.exports = config;

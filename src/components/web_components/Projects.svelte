@@ -54,10 +54,10 @@
             <span class="text-2sm mt-2">{project.description}</span>
             <div class="my-2">
               <span>{currentPageTexts.techsUsed}</span>
-              <div class="flex mt-2">
+              <div class="flex flex-wrap mt-2">
                 {#each project.tecnologies as techs}
                   <span
-                    class="text-2sm mr-3 p-2 border border-dark-20 rounded bg-white text-black"
+                    class="text-2sm mr-3 p-2 border border-dark-20 rounded bg-white text-black my-1 xs:my-0"
                     >{techs}</span
                   >
                 {/each}

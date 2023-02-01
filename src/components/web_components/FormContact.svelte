@@ -36,7 +36,6 @@
         title: email,
         message,
       });
-      console.log(response);
       currentGif = "success.gif";
       email = "";
       message = "";

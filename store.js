@@ -42,7 +42,7 @@ export const pageTexts = writable({
       time: "Hoje às",
       message: "Ficou interessado? Envie-me uma mensagem e vamos conversar!",
       btn: "Iniciar conversa",
-    }
+    },
   },
   aboutMeTexts: {
     us: {
@@ -88,9 +88,11 @@ export const pageTexts = writable({
       bestEmail: "Insert your best email",
       message: "e. g. I'm interested in your work, can we talk?",
       warning: "Please, fill all the fields to send your message.",
-      special_words: "Looks like something went wrong. Please make sure you are not using any special characters and a valid email address.",
+      special_words:
+        "Looks like something went wrong. Please make sure you are not using any special characters and a valid email address.",
       error: "Something went wrong. Please try again.",
-      success: "Your message was sent successfully! I'll get back to you as soon as possible.",
+      success:
+        "Your message was sent successfully! I'll get back to you as soon as possible.",
       or: "or...",
       sendBtn: "Send",
     },
@@ -99,12 +101,14 @@ export const pageTexts = writable({
       bestEmail: "Insira seu melhor e-mail",
       message: "ex. Estou interessado em seu trabalho, podemos conversar?",
       warning: "Por favor, preencha todos os campos para enviar sua mensagem.",
-      special_words: "Parece que algo deu errado. Certifique-se de que você não está usando nenhum caractere especial e um endereço de e-mail válido.",
+      special_words:
+        "Parece que algo deu errado. Certifique-se de que você não está usando nenhum caractere especial e um endereço de e-mail válido.",
       error: "Algo deu errado. Por favor, tente novamente.",
-      success: "Sua mensagem foi enviada com sucesso! Eu entrarei em contato o mais breve possível.",
+      success:
+        "Sua mensagem foi enviada com sucesso! Eu entrarei em contato o mais breve possível.",
       or: "ou...",
       sendBtn: "Enviar",
-    }
+    },
   },
   projectsText: {
     us: {
@@ -165,13 +169,18 @@ export const pageTexts = writable({
             status: "Completed",
           },
           {
-            name: "Vue voting device",
+            name: "Freelance project - landing page",
             description:
-              "A voting device that allows users to vote for antagonist or protagonists",
+              "This is a freelance project I built for a client. It's a landing page with information about the client's work.",
             image: "./images/voting-device.png",
-            link: "https://vue-voting-device.netlify.app/",
-            repository: "https://github.com/TLucas97/vue_voting_device",
-            tecnologies: ["Vue.js", "Vuetify", "Local Storage", "Javascript"],
+            link: "https://www.ruytorres.com.br/",
+            repository: "https://github.com/TLucas97/dr-ruy-landingpage",
+            tecnologies: [
+              "Svelte",
+              "Svelte UI",
+              "Javascript",
+              "Svelte Global State",
+            ],
             status: "Completed",
           },
         ],
@@ -198,11 +207,13 @@ export const pageTexts = writable({
           ],
           klever: {
             name: "Klever Swap Web",
-            description: "A platform for swapping cryptocurrencies with many web3 wallet integrations",
+            description:
+              "A platform for swapping cryptocurrencies with many web3 wallet integrations",
           },
           dacxi: {
             name: "DACXI Exchange",
-            description: "A platform for buying, selling and managing cryptocurrencies",
+            description:
+              "A platform for buying, selling and managing cryptocurrencies",
           },
           techs: {
             suthub: [
@@ -315,13 +326,18 @@ export const pageTexts = writable({
             status: "Completed",
           },
           {
-            name: "Vue voting device",
+            name: "Projeto freelance - landing page",
             description:
-              "Um dispositivo de votação que permite que os usuários votem em antagonistas ou protagonistas",
+              "O projeto foi feito para um cliente que me contratou para desenvolver um website para ele.",
             image: "./images/voting-device.png",
-            link: "https://vue-voting-device.netlify.app/",
-            repository: "https://github.com/TLucas97/vue_voting_device",
-            tecnologies: ["Vue.js", "Vuetify", "Local Storage", "Javascript"],
+            link: "https://www.ruytorres.com.br/",
+            repository: "https://github.com/TLucas97/dr-ruy-landingpage",
+            tecnologies: [
+              "Svelte",
+              "Svelte UI",
+              "Javascript",
+              "Svelte Global State",
+            ],
             status: "Completed",
           },
         ],
@@ -341,12 +357,14 @@ export const pageTexts = writable({
             },
             {
               project: "Stellantis",
-              description: "Uma plataforma para gerenciar e vender seguros de veículos",
+              description:
+                "Uma plataforma para gerenciar e vender seguros de veículos",
             },
           ],
           klever: {
             name: "Klever Swap Web",
-            description: "Uma plataforma de troca de criptomoedas que possui integrações com web3 wallets",
+            description:
+              "Uma plataforma de troca de criptomoedas que possui integrações com web3 wallets",
           },
           dacxi: {
             name: "DACXI Exchange",

@@ -4,21 +4,25 @@
   $: currentPageTexts = $pageTexts.sideMenuTexts[$pageTexts.currentLang];
 </script>
 
-<main class="flex justify-between items-center h-[87vh] flex-col mt-2">
-  <div class="flex justify-center items-center flex-col">
-    <img
-      src={`./images/${
-        $pageColors.isDarkMode ? "tarcisio-darkmode" : "tarcisio"
-      }.png`}
-      alt="profile-pic"
-      class="rounded-lg w-44 h-44"
-    />
-    <span class="mt-4 text-xl font-mono">Tarcísio Almeida</span>
-    <span class="mt-1 text-sm font-mono">{currentPageTexts.age}</span>
-    <span class="mt-1 text-2sm font-mono">{currentPageTexts.jobTitle}</span>
-    <div class="mt-4 flex flex-col">
+<main class="flex justify-between items-center h-full lg:h-[87vh] lg:flex-col lg:mt-2">
+  <div class="flex justify-between lg:justify-center items-center lg:flex-col">
+    <div class="flex justify-center items-center lg:flex-col">
+      <img
+        src={`./images/${
+          $pageColors.isDarkMode ? "tarcisio-darkmode" : "tarcisio"
+        }.png`}
+        alt="profile-pic"
+        class="rounded-lg lg:w-44 lg:h-44 h-20 w-20"
+      />
+      <div class="flex justify-center items-center flex-col ml-4 lg:ml-0">
+        <span class="lg:mt-4 lg:text-xl font-mono">Tarcísio Almeida</span>
+        <span class="lg:mt-1 lg:text-sm font-mono">{currentPageTexts.age}</span>
+        <span class="lg:mt-1 lg:text-2sm font-mono">{currentPageTexts.jobTitle}</span>
+      </div>
+    </div>
+    <div class="ml-6 lg:mt-4 lg:ml-0 flex space-x-4 lg:space-x-0 lg:flex-col">
       <button
-        class="rounded-lg font-mono text-lg text-center my-3 w-64 h-12 flex justify-center items-center font-semibold"
+        class="rounded-lg font-mono lg:text-lg text-center my-3 p-2 lg:p-0 lg:w-64 lg:h-12 flex justify-center items-center font-semibold"
         class:bg-dark-10={$pageColors.isDarkMode}
         class:bg-light-10={!$pageColors.isDarkMode}
         class:text-dark-10={!$pageColors.isDarkMode}
@@ -31,7 +35,7 @@
           >{/if}
       </button>
       <button
-        class="rounded-lg font-mono text-lg text-center my-3 w-64 h-12 flex justify-center items-center font-semibold"
+        class="rounded-lg font-mono lg:text-lg text-center my-3 p-2 lg:p-0 lg:w-64 lg:h-12 flex justify-center items-center font-semibold"
         class:bg-dark-10={$pageColors.isDarkMode}
         class:bg-light-10={!$pageColors.isDarkMode}
         class:text-dark-10={!$pageColors.isDarkMode}
@@ -44,7 +48,7 @@
           >{/if}
       </button>
       <button
-        class="rounded-lg font-mono text-lg text-center my-3 w-64 h-12 flex justify-center items-center font-semibold"
+        class="rounded-lg font-mono lg:text-lg text-center my-3 p-2 lg:p-0 lg:w-64 lg:h-12 flex justify-center items-center font-semibold"
         class:bg-dark-10={$pageColors.isDarkMode}
         class:bg-light-10={!$pageColors.isDarkMode}
         class:text-dark-10={!$pageColors.isDarkMode}
@@ -58,8 +62,8 @@
       </button>
     </div>
   </div>
-  <div class="mb-9">
-    <div class="flex justify-center items-center space-x-3 mb-3">
+  <div class="lg:mb-9">
+    <div class="flex justify-center items-center space-x-3 lg:mb-3">
       <button
         title={currentPageTexts.langToggle}
         class:opacity-30={$pageTexts.currentLang === "us"}
@@ -83,6 +87,6 @@
         />
       </button>
     </div>
-    <small class="opacity-75">{currentPageTexts.rights} © 2023</small>
+    <small class="opacity-75 text-2xs lg:text-base">{currentPageTexts.rights} © 2023</small>
   </div>
 </main>
