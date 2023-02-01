@@ -148,7 +148,10 @@
         <button
           title={currentPageTexts.langToggle}
           class:opacity-30={$pageTexts.currentLang === "us"}
-          on:click={() => ($pageTexts.currentLang = "ptbr")}
+          on:click={() => {
+            $pageTexts.currentLang = "ptbr";
+            hidden1 = true;
+          }}
         >
           <img
             src="https://cdn-icons-png.flaticon.com/512/4060/4060945.png"
@@ -159,7 +162,10 @@
         <button
           title={currentPageTexts.langToggle}
           class:opacity-30={$pageTexts.currentLang === "ptbr"}
-          on:click={() => ($pageTexts.currentLang = "us")}
+          on:click={() => {
+            $pageTexts.currentLang = "us";
+            hidden1 = true;
+          }}
         >
           <img
             src="https://cdn-icons-png.flaticon.com/512/8281/8281549.png"

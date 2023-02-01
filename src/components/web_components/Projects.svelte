@@ -87,19 +87,22 @@
       <div class="mt-10" in:fade>
         <div class="flex space-x-4">
           <button
-            class="p-3 bg-success-20 font-bold rounded text-white hover:opacity-50"
+            class="p-3 bg-success-20 font-bold rounded text-white opacity-50 hover:opacity-100"
+            class:opacity-100={currentCompanyTab === "SUTHUB"}
             on:click={() => (currentCompanyTab = "SUTHUB")}
           >
             SUTHUB
           </button>
           <button
-            class="p-3 bg-purple-10 font-bold rounded text-white hover:opacity-50"
+            class="p-3 bg-purple-10 font-bold rounded text-white opacity-50 hover:opacity-100"
+            class:opacity-100={currentCompanyTab === "Klever.io"}
             on:click={() => (currentCompanyTab = "Klever.io")}
           >
             Klever.io
           </button>
           <button
-            class="p-3 bg-blue-30 font-bold rounded text-white hover:opacity-50"
+            class="p-3 bg-blue-30 font-bold rounded text-white opacity-50 hover:opacity-100"
+            class:opacity-100={currentCompanyTab === "Dacxi Chain"}
             on:click={() => (currentCompanyTab = "Dacxi Chain")}
           >
             Dacxi Chain
@@ -185,7 +188,7 @@
       <div>
         <button
           class="transition bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded mt-2"
-          on:click={() => $pageState.currentMenuOption = "contact"}
+          on:click={() => ($pageState.currentMenuOption = "contact")}
         >
           {currentPageTexts.contactBtn}
         </button>
