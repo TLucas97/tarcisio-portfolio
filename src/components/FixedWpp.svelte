@@ -17,7 +17,7 @@
   };
 </script>
 
-<main class="absolute bottom-0 right-0 m-8">
+<main class="absolute bottom-0 right-0 m-5">
   {#if cardView}
     <div
       class="xs:w-[350px] xs:h-[270px] bg-white mb-4 mr-2 rounded-2xl flex flex-col justify-between"

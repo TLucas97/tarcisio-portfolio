@@ -88,7 +88,7 @@
     <span class="ml-2">{currentPageTexts.or}</span>
   </div>
   <div
-    class="mt-5 w-[600px]"
+    class="mt-5 w-full md:w-[600px]"
     class:box-disabled={currentGif === "please-wait.gif"}
   >
     <div class="relative">
