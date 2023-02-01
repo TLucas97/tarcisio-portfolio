@@ -3,9 +3,16 @@
   import { fade } from "svelte/transition";
 
   $: currentAboutTexts = $pageTexts.aboutMeTexts[$pageTexts.currentLang];
+  $: currentSideMenuTexts = $pageTexts.sideMenuTexts[$pageTexts.currentLang];
 </script>
 
 <main class="px-2 py-3" in:fade>
+  <div class="flex asm:hidden justify-center items-center flex-col mb-10">
+    <img src="./images/tarcisio.png" alt="profile-pic" class="w-[200px] h-[200px] rounded-lg mb-3">
+    <span class="text-4xl font-bold">Tarcísio Almeida</span>
+    <span class="text-xl font-bold">{currentSideMenuTexts.jobTitle}</span>
+    <span class="text-xl font-bold">{currentSideMenuTexts.age}</span>
+  </div>
   <span class="text-3xl font-semibold">
     {currentAboutTexts.title}
   </span>
