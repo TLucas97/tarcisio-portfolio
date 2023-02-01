@@ -10,7 +10,7 @@
 
 <svelte:window bind:scrollY={y} />
 <main
-  class="w-full h-screen transition-colors duration-300"
+  class="w-full transition-colors duration-300"
   class:bg-dark-10={$pageColors.isDarkMode}
   class:text-light-10={$pageColors.isDarkMode}
   class:bg-light-10={!$pageColors.isDarkMode}
