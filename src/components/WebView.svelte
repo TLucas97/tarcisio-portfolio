@@ -5,7 +5,7 @@
   import MainMenu from "./web_components/MainMenu.svelte";
 
   let y = 0;
-  $: console.log(y);
+  // $: console.log(y);
 </script>
 
 <svelte:window bind:scrollY={y} />
