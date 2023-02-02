@@ -19,7 +19,7 @@
 </script>
 
 <main
-  class="w-full flex justify-between items-center px-12 py-3 asm:fixed asm:relative"
+  class="w-full flex justify-between items-center px-12 py-3 fixed top-0 asm:relative"
   class:bg-dark-20={$pageColors.isDarkMode}
   class:bg-light-10={$pageColors.isDarkMode}
   class:bg-light-20={!$pageColors.isDarkMode}

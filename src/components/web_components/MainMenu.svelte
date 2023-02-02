@@ -10,7 +10,7 @@
 </script>
 
 <main
-  class="flex lg:space-x-6 space-y-6 px-5 mt-1 lg:mt-5 w-full h-[93.6vh] lg:h-[92.7vh] lg:flex-row flex-col overflow-hidden"
+  class="flex lg:space-x-6 space-y-6 px-5 mt-1 lg:mt-5 w-full h-[93.6vh] lg:h-[92.7vh] lg:flex-row flex-col overflow-hidden mt-12 asm:mt-0"
 >
   <FixedWpp />
   <div
