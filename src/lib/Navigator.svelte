@@ -120,19 +120,18 @@
 		</div>
 		<div class="w-[35px] h-[35px] hover:text-red-500 transition-all">
 			<Tooltip position="bottom" text={currentNavTexts.downloadPDF}>
-				<a
-					href={`${
-						$texts.currentLanguage === 'en'
-							? './src/assets/TARCISIO-ALMEIDA-CV-EN.pdf'
-							: './src/assets/TARCISIO-ALMEIDA-CV-PTBR.pdf'
-					}`}
-					type="application/pdf"
-					target="_blank"
+				<button
+					on:click={() =>
+						openNewTab(
+							`${
+								$texts.currentLanguage === 'ptbr'
+									? 'https://docdro.id/vtdmxcj'
+									: 'https://docdro.id/esY2BTU'
+							}`
+						)}
 				>
-					<button>
-						<IoMdCloudDownload />
-					</button>
-				</a>
+					<IoMdCloudDownload />
+				</button>
 			</Tooltip>
 		</div>
 	</div>

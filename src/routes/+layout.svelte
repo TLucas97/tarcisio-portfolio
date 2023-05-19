@@ -29,6 +29,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Tarcísio Almeida</title>
+</svelte:head>
+
 <main class="gradient-bg h-full flex items-center justify-center font-cormorant">
 	<div class="wrap">
 		<SvelteToast />
