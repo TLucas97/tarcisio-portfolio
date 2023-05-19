@@ -1,38 +1,41 @@
 {
-  "name": "tarcisio-portfolio",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "@popperjs/core": "^2.11.6",
-    "@smui/button": "^7.0.0-beta.0",
-    "@smui/dialog": "^7.0.0-beta.0",
-    "@smui/icon-button": "^7.0.0-beta.0",
-    "@smui/tab": "^7.0.0-beta.0",
-    "@smui/tab-bar": "^7.0.0-beta.0",
-    "@sveltejs/vite-plugin-svelte": "^1.1.0",
-    "autoprefixer": "^10.4.7",
-    "classnames": "^2.3.2",
-    "flowbite": "^1.6.3",
-    "flowbite-svelte": "^0.29.13",
-    "postcss": "^8.4.14",
-    "postcss-load-config": "^4.0.1",
-    "prettier": "^2.8.0",
-    "prettier-plugin-svelte": "^2.8.1",
-    "sass": "^1.53.0",
-    "svelte": "^3.52.0",
-    "svelte-preprocess": "^4.10.7",
-    "tailwindcss": "^3.1.5",
-    "vite": "^3.2.3"
-  },
-  "dependencies": {
-    "axios": "^1.2.2",
-    "svelte-material-ui": "^7.0.0-beta.0",
-    "svelte-navigator": "^3.2.2"
-  }
+	"name": "tarcisio-portfolio",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"format": "prettier --plugin-search-dir . --write ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/kit": "^1.5.0",
+		"@typescript-eslint/eslint-plugin": "^5.45.0",
+		"@typescript-eslint/parser": "^5.45.0",
+		"@zerodevx/svelte-toast": "^0.9.3",
+		"autoprefixer": "^10.4.14",
+		"eslint": "^8.28.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-svelte": "^2.26.0",
+		"postcss": "^8.4.23",
+		"postcss-load-config": "^4.0.1",
+		"prettier": "^2.8.0",
+		"prettier-plugin-svelte": "^2.8.1",
+		"svelte": "^3.54.0",
+		"svelte-check": "^3.0.1",
+		"svelte-preprocess": "^5.0.3",
+		"tailwindcss": "^3.3.2",
+		"tslib": "^2.4.1",
+		"typescript": "^5.0.0",
+		"vite": "^4.3.0"
+	},
+	"type": "module",
+	"dependencies": {
+		"svelte-icons": "^2.1.0",
+		"svelte-vertical-timeline": "^1.0.0"
+	}
 }
