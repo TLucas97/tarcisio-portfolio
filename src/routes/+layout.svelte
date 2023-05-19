@@ -47,7 +47,7 @@
 				<div class="w-full h-full overflow-scroll overflow-x-hidden">
 					{#if isCardVisible}
 						<div
-							class="w-full h-full max-small:h-[54%] max-extraSmall:h-[52%] max-extraSmall2:h-[46%] mt-5"
+							class="w-full max-small:h-[54%] max-extraSmall:h-[52%] max-extraSmall2:h-[46%] mt-5"
 							in:blur={{ duration: 400 }}
 							bind:this={innerHeight}
 						>
