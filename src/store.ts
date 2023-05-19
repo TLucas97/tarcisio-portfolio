@@ -59,7 +59,7 @@ export const texts: any = writable({
 							'Worked as a freelancer developing small projects for friends and local establishments, utilizing technologies such as Javascript, HTML, CSS, and Bootstrap.'
 						]
 					},
-					time: '2021 - 11 months'
+					time: '2021 - 10 months'
 				},
 				{
 					job: {
@@ -106,7 +106,7 @@ export const texts: any = writable({
 							'Trabalhei como freelancer desenvolvendo pequenos projetos para amigos e estabelecimentos locais, utilizando tecnologias como Javascript, HTML, CSS e Bootstrap.'
 						]
 					},
-					time: '2021 - 11 meses'
+					time: '2021 - 10 meses'
 				},
 				{
 					job: {
