@@ -123,8 +123,8 @@
 				<a
 					href={`${
 						$texts.currentLanguage === 'en'
-							? '../../src/assets/TARCISIO-ALMEIDA-CV-EN.pdf'
-							: '../../src/assets/TARCISIO-ALMEIDA-CV-PTBR.pdf'
+							? './src/assets/TARCISIO-ALMEIDA-CV-EN.pdf'
+							: './src/assets/TARCISIO-ALMEIDA-CV-PTBR.pdf'
 					}`}
 					type="application/pdf"
 					target="_blank"
