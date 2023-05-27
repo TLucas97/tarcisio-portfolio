@@ -137,7 +137,7 @@
 	</section>
 {:else if currentView === 'MidasGestor'}
 	<section
-		class="w-full py-5 bg-white h-full overflow-scroll overflow-x-hidden relative"
+		class="w-full py-5 bg-white h-[500px] overflow-scroll overflow-x-hidden relative"
 		transition:scale
 	>
 		<h1 class="text-2xl font-bold text-center">{currentProjectsText.detailsTitle}</h1>
@@ -188,7 +188,7 @@
 	</section>
 {:else if currentView === 'LinkySvelte'}
 	<section
-		class="w-full py-5 bg-white h-full overflow-scroll overflow-x-hidden relative"
+		class="w-full py-5 bg-white h-[500px] overflow-scroll overflow-x-hidden relative"
 		transition:scale
 	>
 		<h1 class="text-2xl font-bold text-center">{currentProjectsText.detailsTitle}</h1>
@@ -241,7 +241,7 @@
 	</section>
 {:else if currentView === 'Github Info'}
 	<section
-		class="w-full py-5 bg-white h-full overflow-scroll overflow-x-hidden relative"
+		class="w-full py-5 bg-white h-[500px] overflow-scroll overflow-x-hidden relative"
 		transition:scale
 	>
 		<h1 class="text-2xl font-bold text-center">{currentProjectsText.detailsTitle}</h1>
