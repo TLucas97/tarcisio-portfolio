@@ -102,7 +102,7 @@ export const texts: any = writable({
 							"Built the company's main platform, a web application for managing representatives and their clients, using Sveltekit, Tailwind CSS and Typescript."
 						]
 					},
-					time: '2022/2023 - 3 months (current)'
+					time: '2022/2023 - 4 months (current)'
 				}
 			]
 		},
