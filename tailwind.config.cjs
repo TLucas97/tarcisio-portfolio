@@ -9,9 +9,6 @@ const config = {
 			extraSmall: '460px',
 			extraSmall2: '320px'
 		},
-		fontFamily: {
-			cormorant: ['Cormorant Garamond', 'serif']
-		},
 		extend: {
 			colors: {
 				'white-1': '#E3F4F4'

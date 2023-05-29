@@ -33,7 +33,7 @@
 	<title>Tarcísio Almeida</title>
 </svelte:head>
 
-<main class="gradient-bg h-full flex items-center justify-center font-cormorant">
+<main class="gradient-bg h-full flex items-center justify-center">
 	<div class="wrap">
 		<SvelteToast />
 	</div>

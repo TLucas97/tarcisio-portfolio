@@ -94,6 +94,15 @@ export const texts: any = writable({
 						]
 					},
 					time: '2022/2023 - 3 months'
+				},
+				{
+					job: {
+						title: 'Front-end Engineer (Midas Gestor)',
+						items: [
+							"Built the company's main platform, a web application for managing representatives and their clients, using Sveltekit, Tailwind CSS and Typescript."
+						]
+					},
+					time: '2022/2023 - 3 months (current)'
 				}
 			]
 		},
@@ -141,6 +150,15 @@ export const texts: any = writable({
 						]
 					},
 					time: '2022/2023 - 3 meses'
+				},
+				{
+					job: {
+						title: 'Engenheiro Front-end (Midas Gestor)',
+						items: [
+							'Construí a plataforma principal da empresa, um aplicativo web para gerenciar representantes e seus clientes, utilizando Sveltekit, Tailwind CSS e Typescript.'
+						]
+					},
+					time: '2022/2023 - 4 meses (atual)'
 				}
 			]
 		}
