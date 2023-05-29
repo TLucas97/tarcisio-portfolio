@@ -87,22 +87,12 @@ export const texts: any = writable({
 				},
 				{
 					job: {
-						title: 'Front-end Developer (Dacxi Chain)',
-						items: [
-							"Collaborated on the company's rebranding project at DACXI Chain, contributing to changes in the design system and ensuring a stable redesign with minimal layout disruptions.",
-							"Played an active role in code correction in DACXI's main platform, the exchange, improving its functionality, stability, and security."
-						]
-					},
-					time: '2022/2023 - 3 months'
-				},
-				{
-					job: {
 						title: 'Front-end Engineer (Midas Gestor)',
 						items: [
 							"Built the company's main platform, a web application for managing representatives and their clients, using Sveltekit, Tailwind CSS and Typescript."
 						]
 					},
-					time: '2022/2023 - 4 months (current)'
+					time: '2022/2023 - 6 months (current)'
 				}
 			]
 		},
@@ -143,22 +133,12 @@ export const texts: any = writable({
 				},
 				{
 					job: {
-						title: 'Desenvolvedor Front-end (Dacxi Chain)',
-						items: [
-							'Colaborei no projeto de rebranding da empresa na DACXI Chain, contribuindo para alterações no sistema de design e garantindo um redesign estável com interrupções mínimas no layout.',
-							'Desempenhei um papel ativo na correção de código na plataforma principal da DACXI, a exchange, melhorando sua funcionalidade, estabilidade e segurança.'
-						]
-					},
-					time: '2022/2023 - 3 meses'
-				},
-				{
-					job: {
 						title: 'Engenheiro Front-end (Midas Gestor)',
 						items: [
 							'Construí a plataforma principal da empresa, um aplicativo web para gerenciar representantes e seus clientes, utilizando Sveltekit, Tailwind CSS e Typescript.'
 						]
 					},
-					time: '2022/2023 - 4 meses (atual)'
+					time: '2022/2023 - 6 meses (atual)'
 				}
 			]
 		}
