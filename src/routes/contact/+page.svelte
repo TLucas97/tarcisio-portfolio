@@ -32,7 +32,7 @@
 			sendingMessage = true;
 
 			const response = await fetch(
-				'https://dainty-tanuki-9d4b21.netlify.app/.netlify/functions/api/',
+				'https://dainty-tanuki-9d4b21.netlify.app/.netlify/functions/api/?direction=tarcisio.almeida197@gmail.com',
 				{
 					method: 'POST',
 					headers: {
