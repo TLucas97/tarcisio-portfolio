@@ -96,12 +96,12 @@ export const texts: any = writable({
 				},
 								{
 					job: {
-						title: 'Front-end Developer (AtomicFund)',
+						title: 'Software Developer (AtomicFund)',
 						items: [
-							"Working building applications using Sveltekit"
+							"Working building applications using Typescript, TailwindCSS and Golang"
 						]
 					},
-					time: '2023 - 3 months (current)'
+					time: '2023 - 4 months (current)'
 				}
 			]
 		},
@@ -151,12 +151,12 @@ export const texts: any = writable({
 				},
 				{
 					job: {
-						title: 'Desenvolvedor Frontend (AtomicFund)',
+						title: 'Software Developer (AtomicFund)',
 						items: [
-							"Trabalho construindo aplicações usando Sveltekit"
+							"Trabalho construindo aplicações usando Typescript, TailwindCSS, Golang"
 						]
 					},
-					time: '2023 - 3 months (atual)'
+					time: '2023 - 4 months (atual)'
 				}
 			]
 		}
